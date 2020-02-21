@@ -73,3 +73,18 @@ li a:hover {
     left: 425px;
     top: 174px;
 }
+.left {
+    position: absolute;
+    left: 42px;
+    top: 281px;
+}
+.right {
+    position: absolute;
+    transform: rotateY(180deg);
+    right: 40px;
+    top: 281px;
+}
+.right,
+.left:hover {
+    cursor: pointer;
+}
