@@ -37,7 +37,6 @@ li {
     display: inline-block;
     list-style-type: none;
     margin-left: 21px;
-    letter-spacing: 0;
 }
 li + li:before {
     content: '.';
@@ -51,4 +50,26 @@ li + li:before {
 li a:hover {
     color: #f06c64;
     transition: 0.3s;
+}
+
+/* SLIDER */
+
+.slider-top {
+    height: 594px;
+    background-color: #f06c64;
+    position: relative;
+}
+.slider-bottom {
+    height: 6px;
+    background-color: #ea676b;
+}
+.phone-vertical {
+    position: absolute;
+    left: 112px;
+    top: 53px;
+}
+.phone-horizontal {
+    position: absolute;
+    left: 425px;
+    top: 174px;
 }
