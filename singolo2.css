@@ -83,6 +83,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, img, form, fieldset, b
 }
 .container-about-bottom {
     background-color: #fff;
+    height: 6px;
 }
 .about {
     padding-top: 60px;
@@ -98,7 +99,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, img, form, fieldset, b
     letter-spacing: -0.2px;
     line-height: 30px;
 }
-.pictures-about {
+.profiles-about {
     display: flex;
     justify-content: space-between;
     padding-top: 45px;
@@ -109,7 +110,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, img, form, fieldset, b
 .profile h3 {
     font-size: 18px;
     padding-top: 12px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.1px;
 }
 .profile p {
     font-size: 12px;
@@ -118,3 +119,14 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, img, form, fieldset, b
     line-height: 21px;
     letter-spacing: -0.2px;
 }
+.social {
+    display: flex;
+    width: 152px;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+/* .social img {
+    border: 1px solid #6a718c;
+    border-radius: 17px;
+    padding: 9px;
+} */
