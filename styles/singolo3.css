@@ -1,0 +1,125 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, img, form, fieldset, blockquote, ul, li, a {  
+    margin:0px; 
+    padding:0px; 
+    border:0px;
+    text-decoration: none;
+    list-style: none;
+} 
+.wrapper {
+    width: 1020px;
+    margin: 0 auto;
+}
+.container-quote-top {
+    height: 648px;
+    background-color: #f06c64;
+}
+.container-quote-bottom {
+    height: 6px;
+    background-color: #ea676b;
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+.quote {
+    padding-top: 60px;
+    padding-bottom: 67px;
+    color: #f0d8d9;
+}
+.quote-h2 {
+    font-family: "LatoBlack";
+    font-size: 30px;
+}
+.quote-p-one {
+    padding-top: 17px;
+    font-family: "LatoLight";
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.1px;
+}
+
+/* FORM */
+
+input::-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #f48c8f;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #f48c8f;
+}
+.quote-form-contact {
+    padding-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    height: 430px;
+}
+.quote-form {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    height: 430px;
+}
+.quote-form input,textarea, button {
+    border: 1px solid #d6564f;
+    border-radius: 5px;
+    background-color: #d6564f;
+    padding: 11px 0px 13px 14px;
+    color: #f48c8f;
+    resize: none;
+    font-family: "LatoRegular";
+    font-size: 12px;
+    margin-bottom: 13px;
+}
+.quote-form button {
+    padding: 10px;
+    width: 100px;
+}
+.quote-form button:hover {
+    cursor: pointer;
+}
+.quote-form input:focus,
+ textarea:focus {
+    background-color: #2d303a;
+    transition: 0.3s;
+    outline: none;
+}
+.contact-info {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+}
+.quote-h3 {
+    font-family: "LatoBlack";
+    font-size: 18px;
+}
+.quote-p-two {
+    padding-top: 6px;
+    letter-spacing: -0.2px;
+    line-height: 22px;
+    font-family: "LatoRegular";
+    font-size: 12px;
+}
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    height: 54px;
+    width: 145px;
+    font-family: "LatoRegular";
+    font-size: 12px;
+}
+.contacts-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contacts-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 10px;
+}
+.contacts-text a {
+    color: #f0d8d9;
+}

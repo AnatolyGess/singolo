@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/singolo3.css">
-    <title>Document</title>
+    <title>Singolo3</title>
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <div class="container-quote-top">
+            <div class="container">
+                <section class="quote">
+                    <h2 class="quote-h2">Get a Quote</h2>
+                    <p class="quote-p-one">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+                        mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce
+                        dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                    <div class="quote-form-contact">
+                        <form action="post" class="quote-form">
+                            <input type="text" placeholder="Name (Required)" pattern="[^0-9]" required>
+                            <input type="email" placeholder="Email (Required)" required>
+                            <input type="text" placeholder="Subject">
+                            <textarea name="DescribingProject" id="textarea" cols="30" rows="12"
+                                placeholder="Describe your project in detail..."></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                        <div class="contact-info">
+                            <h3 class="quote-h3">Contact Information</h3>
+                            <p class="quote-p-two">Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh.
+                                Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor
+                                luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+                            <div class="contacts">
+                                <div class="contacts-img">
+                                    <img src="./assets/locationContacts.svg" alt="location">
+                                    <img src="./assets/phoneContacts.svg" alt="phone">
+                                    <img src="./assets/mailContacts.svg" alt="mail">
+                                </div>
+                                <div class="contacts-text">
+                                    <p>Elm St. 14/05 Lost City</p>
+                                    <a href="#" type="tel:+03528 331 86 35">03528 331 86 35</a>
+                                    <a href="#" type="mailto:info@singolo.com">info@singolo.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="container-quote-bottom"></div>
+    </div>
 </body>
+
 </html>
