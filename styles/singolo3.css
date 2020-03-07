@@ -23,7 +23,6 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dt, dd, img, form, fieldset, b
 }
 .quote {
     padding-top: 60px;
-    padding-bottom: 67px;
     color: #f0d8d9;
 }
 .quote-h2 {
@@ -122,4 +121,25 @@ textarea::-webkit-input-placeholder {
 }
 .contacts-text a {
     color: #f0d8d9;
+}
+
+/* FOOTER */
+
+.container-footer {
+    background-color: #2d303a;
+}
+.footer {
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "LatoRegular";
+    font-size: 12px;
+    color: #666d89;
+}
+.footer-icons img {
+    margin-right: 5px;
+}
+.footer-icons img:last-of-type {
+    margin-right: 0px;
 }
