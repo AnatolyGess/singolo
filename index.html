@@ -12,16 +12,16 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="header-top">
+            <div class="header-top" id="HOME">
                 <a href="#">
                     <h1>SINGOLO</h1>
                 </a>
                 <ul class="nav">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#HOME">HOME</a></li>
+                    <li><a href="#SERVICES">SERVICES</a></li>
+                    <li><a href="#PORTFOLIO">PORTFOLIO</a></li>
+                    <li><a href="#ABOUT">ABOUT</a></li>
+                    <li><a href="#CONTACT">CONTACT</a></li>
                 </ul>
             </div>
             <div class="header-bottom"></div>
@@ -29,8 +29,13 @@
 
         <section>
             <div class="slider-top">
-                <img src="./assets/vertical.png" alt="VerticalPhone" class="phone-vertical">
-                <img src="./assets/horizontal.png" alt="HorizontalPhone" class="phone-horizontal">
+                <div class="slider1">
+                    <img src="./assets/vertical.png" alt="VerticalPhone" class="phone-vertical">
+                    <img src="./assets/horizontal.png" alt="HorizontalPhone" class="phone-horizontal">
+                </div>
+                <div class="slider2 disable">
+                    <img src="./assets/Slide-2.png" alt="slider2">
+                </div>
                 <img src="./assets/left.png" alt="arrow-left" class="left">
                 <img src="./assets/left.png" alt="arrow-left" class="right">
             </div>
@@ -38,7 +43,7 @@
         </section>
 
         <section>
-            <div class="services-top">
+            <div class="services-top" id="SERVICES">
                 <h2>Our Services</h2>
                 <p class="p-light">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
                     commodo luctus, isi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac
@@ -99,7 +104,7 @@
             <div class="services-bottom"></div>
         </section>
 
-        <div class="container-portfolio-top">
+        <div class="container-portfolio-top" id="PORTFOLIO">
             <div class="container">
                 <section class="portfolio">
                     <h2>Portfolio</h2>
@@ -131,7 +136,7 @@
             </div>
         </div>
         <div class="container-portfolio-bottom"></div>
-        <div class="container-about-top">
+        <div class="container-about-top" id="ABOUT">
             <div class="container">
                 <div class="about">
                     <h2>About Us</h2>
@@ -181,7 +186,7 @@
         </div>
         <div class="container-about-bottom"></div>
 
-        <div class="container-quote-top">
+        <div class="container-quote-top" id="CONTACT">
             <div class="container">
                 <section class="quote">
                     <h2>Get a Quote</h2>
@@ -234,6 +239,7 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

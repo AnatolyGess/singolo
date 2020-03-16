@@ -95,6 +95,12 @@ h1:after {
     height: 6px;
     background-color: #ea676b;
 }
+.disable {
+    display: none;
+}
+.slider1 {
+    position: relative;
+}
 .phone-vertical {
     position: absolute;
     left: 112px;
@@ -399,4 +405,10 @@ textarea::-webkit-input-placeholder {
 }
 .footer-icons img:last-of-type {
     margin-right: 0px;
+}
+
+/* SINGOLO-DOM STYLES */
+
+a.active {
+    color: #f06c64;
 }
