@@ -55,7 +55,8 @@
                         <img src="./assets/pen.svg" alt="pen">
                         <div class="menu-text">
                             <h3>Custom Design</h3>
-                            <p class="p-regular">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet,
+                            <p class="p-regular">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+                                laoreet,
                                 viverra lacus ut, ultrices velit.</p>
                         </div>
                     </div>
@@ -149,7 +150,8 @@
                         <div class="profile">
                             <img src="./assets/about-images/AdamJensen.png" alt="AdamJensen">
                             <h3>AdamJensen</h3>
-                            <p class="p-regular">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus
+                            <p class="p-regular">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus,
+                                nec rutrum tellus
                                 dolor id lorem.</p>
                             <div class="social">
                                 <img src="./assets/social-images/facebook.png" alt="facebook">
@@ -161,7 +163,8 @@
                         <div class="profile">
                             <img src="./assets/about-images/DesmondMiles.png" alt="DesmondMiles">
                             <h3>DesmondMiles</h3>
-                            <p class="p-regular">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus
+                            <p class="p-regular">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+                                laoreet, viverra lacus
                                 ut, ultrices velit.</p>
                             <div class="social">
                                 <img src="./assets/social-images/facebook.png" alt="facebook">
@@ -173,7 +176,8 @@
                         <div class="profile">
                             <img src="./assets/about-images/ScoloraVisari.png" alt="ScolaraVisari">
                             <h3>ScolaraVisari</h3>
-                            <p class="p-regular">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
+                            <p class="p-regular">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
+                                consequat felis.
                                 Quisque condimentum.</p>
                             <div class="social">
                                 <img src="./assets/social-images/facebook.png" alt="facebook">
@@ -196,14 +200,22 @@
                         mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce
                         dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                     <div class="quote-form-contact">
-                        <form action="post" class="quote-form">
-                            <input type="text" placeholder="Name (Required)" pattern="[^0-9]" required>
+                        <form class="quote-form">
+                            <input type="text" placeholder="Name (Required)" required>
                             <input type="email" placeholder="Email (Required)" required>
-                            <input type="text" placeholder="Subject">
+                            <input type="text" placeholder="Subject" id="subject">
                             <textarea name="DescribingProject" id="textarea" cols="30" rows="12"
-                                placeholder="Describe your project in detail..."></textarea>
+                                placeholder="Describe your project in detail..." id="textarea"
+                                maxlength="140"></textarea>
                             <button type="submit">Submit</button>
                         </form>
+                        <div class="overlay"></div>
+                        <div class="modal">
+                            <span>The letter was sent</span><br>
+                            <span class="theme"></span><br>
+                            <span class="describe"></span><br>
+                            <span class="close">OK</span>
+                        </div>
                         <div class="contact-info">
                             <h3>Contact Information</h3>
                             <p class="p-regular">Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh.

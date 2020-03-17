@@ -14,7 +14,7 @@ MENU.querySelectorAll('a').forEach(elem => {
             block: 'start'
         });
     });
-})
+});
 
 // HEADER
 
@@ -106,3 +106,24 @@ PICTURES.querySelectorAll('img').forEach(e => {
 });
 
 // IMAGE INTERACTION
+
+const SUBJECT = document.getElementById('subject');
+const TEXTAREA = document.getElementById('textarea');
+const OVERLAY = document.querySelector('.overlay');
+const MODAL = document.querySelector('.modal');
+
+document.querySelector('form').addEventListener('submit', e => {
+    e.preventDefault();
+    document.querySelector('.theme').innerHTML = SUBJECT.value === '' ? 'Without subject' : SUBJECT.value.toString();
+    document.querySelector('.describe').innerHTML = TEXTAREA.value === '' ? 'Without subject' : TEXTAREA.value.toString();
+    OVERLAY.classList.add('active__modal');
+    MODAL.classList.add('active__modal');
+});
+
+document.querySelector('.close').addEventListener('click', e => {
+    document.querySelector('form').reset();
+    OVERLAY.classList.remove('active__modal');
+    MODAL.classList.remove('active__modal');
+});
+
+//  MODAL-WINDOW
