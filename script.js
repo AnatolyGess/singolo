@@ -33,3 +33,76 @@ document.querySelector('.right').addEventListener('click', event => {
     slider2.classList.toggle('disable');
     slider1.classList.contains('disable') ? SLIDER_BOTTOM.style.backgroundColor = "#5e85F6" : SLIDER_BOTTOM.style.backgroundColor = "#ea676b";
 });
+
+// SLIDER`S CAROUSEL
+
+const SLIDE_VERTICAL = document.querySelector('.slide-vertical');
+const SLIDE_HORIZONTAL = document.querySelector('.slide-horizontal');
+
+document.querySelector('.phone-vertical').addEventListener('click', e => {
+    if (e.pageX < 492 && e.pageY < 606) {
+        SLIDE_VERTICAL.classList.toggle('disable');
+    }
+});
+document.querySelector('.phone-horizontal').addEventListener('click', e => {
+    if (e.pageX < 1048 && e.pageY < 484) {
+        SLIDE_HORIZONTAL.classList.toggle('disable');
+    }
+});
+
+SLIDE_VERTICAL.addEventListener('click', e => {
+    SLIDE_VERTICAL.classList.toggle('disable');
+});
+SLIDE_HORIZONTAL.addEventListener('click', e => {
+    SLIDE_HORIZONTAL.classList.toggle('disable');
+});
+
+// ACTIVATE DISPLAY PHONE
+
+const TAGS_MENU = document.querySelector('.tags-portfolio');
+const PICTURES = document.querySelector('.pictures-portfolio');
+
+let randomInt = () => {
+    return Math.floor(Math.random() * 20);
+};
+
+TAGS_MENU.addEventListener('click', e => {
+    e.preventDefault();
+    TAGS_MENU.querySelectorAll('a').forEach(elem => elem.classList.remove('active__tags'));
+    e.target.classList.add('active__tags');
+});
+
+TAGS_MENU.querySelectorAll('a').forEach(e => {
+    e.addEventListener('click', el => {
+        switch (el.target.text) {
+            case 'All':
+                let num = 1;
+                PICTURES.querySelectorAll('img').forEach(element => {
+                    element.style.order = num++;
+                });
+                break;
+            default:
+                PICTURES.querySelectorAll('img').forEach(element => {
+                    element.style.order = randomInt();
+                });
+                break;
+        }
+    })
+});
+
+// PORTFOLIO`S TAB
+
+PICTURES.querySelectorAll('img').forEach(e => {
+    e.addEventListener('click', event => {
+        PICTURES.querySelectorAll('img').forEach(elem => {
+            elem.style.width = '220px';
+            elem.style.height = '187px';
+            elem.style.border = "none";
+        });
+        e.style.width = '210px';
+        e.style.height = '177px';
+        e.style.border = "5px solid #F06C64";
+    });
+});
+
+// IMAGE INTERACTION

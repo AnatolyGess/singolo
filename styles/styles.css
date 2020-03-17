@@ -96,7 +96,7 @@ h1:after {
     background-color: #ea676b;
 }
 .disable {
-    display: none;
+    display: none; 
 }
 .slider1 {
     position: relative;
@@ -105,6 +105,24 @@ h1:after {
     position: absolute;
     left: 112px;
     top: 53px;
+}
+.slide-vertical {
+    position: absolute;
+    top: 118px;
+    left: 126px;
+    height: 333px;
+    width: 188px;
+    background-color: #000;
+    z-index: 1;
+}
+.slide-horizontal {
+    position: absolute;
+    top: 188px;
+    left: 485px;
+    height: 188px;
+    width: 333px;
+    background-color: #000;
+    z-index: 1;
 }
 .phone-horizontal {
     position: absolute;
@@ -218,9 +236,6 @@ h1:after {
 }
 .tags-portfolio li:first-child {
     padding: 5px 6px 7px 8px;
-}
-.tags-portfolio li:first-child a:first-child {
-    color: #dedede;
 }
 .pictures-portfolio {
     margin-top: 19px;
@@ -411,4 +426,11 @@ textarea::-webkit-input-placeholder {
 
 a.active {
     color: #f06c64;
+}
+.active__tags {
+    color: #dedede;
+}
+.tags-portfolio a:not(.active__tags):hover {
+    color: #dedede;
+    transition: 0.6s;
 }
