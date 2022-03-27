@@ -1,3 +1,3 @@
 # Singolo
 Solution
-https://willeWonke.github.io/singolo
+https://anatolygess.github.io/singolo
